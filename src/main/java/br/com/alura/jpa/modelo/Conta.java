@@ -10,9 +10,9 @@ public class Conta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String titular;
     private Integer agencia;
     private Integer numero;
-    private String titular;
     private Double saldo;
 
     public Double getSaldo() {
@@ -31,6 +31,14 @@ public class Conta {
         this.id = id;
     }
 
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
     public Integer getAgencia() {
         return agencia;
     }
@@ -47,11 +55,4 @@ public class Conta {
         this.numero = numero;
     }
 
-    public String getTitular() {
-        return titular;
-    }
-
-    public void setTitular(String titular) {
-        this.titular = titular;
-    }
 }
