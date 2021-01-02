@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 import br.com.alura.jpa.modelo.Conta;
 
-public class TestandoEstados {
+public class TestaEstados {
     public static void main(String[] args) {
         Conta conta = new Conta();
         conta.setTitular("Almiro");
